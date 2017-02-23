@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Log In</h1>
+<!-- The for attribute in the label tag is tied to the named input tag and
+     keeps it on the same line.
+     Span tag groups inline elements together -->
+
+<form method="post">
+    <p class="error">{{ error }}</p>
+
+    <table>
+        <tr>
+            <td><label for="username">Username</label></td>
+            <td>
+                <!--
+                <input name="username" type="text" value="{{ username }}">
+                -->
+                <input name="username" type="text" value="">
+
+            </td>
+        </tr>
+        <tr class="row2">
+            <td><label for="password">Password</label></td>
+            <td>
+                <input name="password" type="password">
+
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <input type="submit">
+</form>
+<p>Don't have an account? <a href="/signup">Create one!</a></p>
+
+
+{% endblock %}

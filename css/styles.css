@@ -70,3 +70,8 @@ nav ul li {
 nav #user-account {
     float: right;
 }
+
+/* Applies padding only to td children of tr.row2 class */
+tr.row2 > td {
+    padding-top: 40px;
+}
